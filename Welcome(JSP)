@@ -1,0 +1,36 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+</head>
+<body>
+    <h1>WELCOMEEE!!!!</h1>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Step 1: New project banao
+Eclipse mein File → New → Dynamic Web Project par click karo.
+- Project Name: WelcomeJSP
+- Target Runtime: Tomcat v11
+- Finish par click karo.
+Step 2: JSP file banao
+Project ke src/main/webapp folder par right-click karo → New → JSP File.
+File name: welcome.jsp
+Ye code paste karo:
+Step 3: Run karo
+welcome.jsp par right-click → Run As → Run on Server.
