@@ -1,0 +1,43 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+
+    <p>Name: Srushti</p>
+    <p>Register Number: 15012</p>
+    <p>Department: AI & DS</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+File → New → Dynamic Web Project
+- Project Name: StudentDetails
+- Target Runtime: Tomcat v11
+- Finish par click karo.
+Step 2: JSP file banao
+src/main/webapp par right-click karo → New → JSP File.
+File name: student.jsp
+Ye code paste karo:
+student.jsp par right-click → Run As → Run on Server.
