@@ -1,0 +1,33 @@
+class Person {
+    String name;
+    int age;
+}
+
+class Student extends Person {
+    String course;
+    int rollNumber;
+}
+
+class GraduateStudent extends Student {
+    int graduationYear;
+
+    void displayDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Course: " + course);
+        System.out.println("Roll Number: " + rollNumber);
+        System.out.println("Graduation Year: " + graduationYear);
+    }
+
+    public static void main(String[] args) {
+        GraduateStudent g = new GraduateStudent();
+
+        g.name = "Rahul";
+        g.age = 22;
+        g.course = "Computer Engineering";
+        g.rollNumber = 101;
+        g.graduationYear = 2028;
+
+        g.displayDetails();
+    }
+}
