@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name Form</title>
+</head>
+<body>
+    <h2>Enter Your Name</h2>
+
+    <form action="displayName" method="get">
+        Enter Name:
+        <input type="text" name="username" required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package com.demo;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/displayName")
+public class NameServlet extends HttpServlet {
+
+    @Override
+    protected void doGet(HttpServletRequest request,
+                         HttpServletResponse response)
+            throws ServletException, IOException {
+
+        response.setContentType("text/html;charset=UTF-8");
+        PrintWriter out = response.getWriter();
+
+        String name = request.getParameter("username");
+
+        out.println("<html><body>");
+        out.println("<h2>Welcome, " + name + "!</h2>");
+        out.println("</body></html>");
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Eclipse mein:
+1. File → New → Dynamic Web Project par click karo.
+2. Project Name mein NameServletProject likho.
+3. Target Runtime mein Tomcat v11 select karo.
+4. Finish par click karo.
+NameServletProject mein src/main/webapp folder par right-click karo → New → HTML File.
+File ka naam index.html rakho aur html code paste karo:
+Ctrl + S dabao.
+Step 3: Servlet banao
+Java Resources → src par right-click karo → New → Servlet.
+- Package: com.demo
+- Class Name: NameServlet
+Finish dabao aur generated code ko replace karke java wala code paste kro
+Ctrl + S se save kar do.
+Step 4:run karo
+1. NameServletProject par right-click karo.
+2. Run As → Run on Server select karo.
+3. Tomcat v11 select karo aur Finish dabao.
+
+
+
