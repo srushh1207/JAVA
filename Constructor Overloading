@@ -1,0 +1,15 @@
+class calculator{
+
+    calculator() {
+        System.out.println("Welcome to Calculator!");
+    }
+
+    calculator(int a, int b) {
+        System.out.println("Sum = " + (a + b));
+    }
+
+    public static void main(String[] args) {
+        calculator c1 = new calculator();
+        calculator c2 = new calculator(32, 54);
+    }
+}
