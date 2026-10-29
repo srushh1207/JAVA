@@ -1,0 +1,52 @@
+
+package com.demo;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/welcome")
+public class WelcomeServlet extends HttpServlet {
+
+    protected void doGet(HttpServletRequest request,
+                         HttpServletResponse response)
+            throws ServletException, IOException {
+
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+
+        out.println("<html><body>");
+        out.println("<h1>Welcome to Java Servlet!</h1>");
+        out.println("</body></html>");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//1. Eclipse open karo.
+2. File → New → Dynamic Web Project par click karo.
+3. Project Name mein WelcomeServlet likho.
+4. Apna Tomcat server select karke Finish karo.
+Project ke andar Java Resources → src par right-click karo.
+- New → Servlet select karo.
+- Class Name: WelcomeServlet
+- Package: com.demo
+- Finish par click karo.
+Ab jo code generate hua hai, use is code se replace karo.
+1. Ctrl + S dabakar save karo.
+2. Project par right-click karo → Run As → Run on Server.
+3. Apache Tomcat select karo aur Finish dabao.
+Browser par message aayega: Welcome to Java Servlet!//
